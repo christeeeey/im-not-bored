@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>tea house · a quiet alternative to scrolling</title>
+<meta name="description" content="A calm digital tea house — pour a cup, browse a menu of offline activities, and keep a collection of things worth doing instead of scrolling." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Navigation (side on desktop, bottom on mobile) -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-brand">tea house</div>
+    <ul class="nav-list" role="list">
+      <li>
+        <a href="#pour" class="nav-link" data-route="pour">
+          <span class="nav-dot" aria-hidden="true"></span>
+          <span class="nav-label">pour</span>
+        </a>
+      </li>
+      <li>
+        <a href="#browse" class="nav-link" data-route="browse">
+          <span class="nav-dot" aria-hidden="true"></span>
+          <span class="nav-label">browse</span>
+        </a>
+      </li>
+      <li>
+        <a href="#collection" class="nav-link" data-route="collection">
+          <span class="nav-dot" aria-hidden="true"></span>
+          <span class="nav-label">collection</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Page outlet -->
+  <main id="page-outlet" class="page-outlet" tabindex="-1">
+    <!-- pages are rendered here by js/app.js -->
+  </main>
+
+</div>
+
+<div id="sr-announcer" class="sr-only" aria-live="polite"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
